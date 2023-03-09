@@ -1,9 +1,9 @@
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework.routers import SimpleRouter
 
 from .views import (
-    SignUpView, TokenView, UsersViewSet, CategoryViewSet, GenreViewSet,
-    TitleViewSet, ReviewVeiwSet, CommentViewSet
+    CategoryViewSet, CommentViewSet, GenreViewSet, ReviewVeiwSet,
+    SignUpView, TitleViewSet, TokenView, UsersViewSet
 )
 
 API_VERSION = 'v1'
