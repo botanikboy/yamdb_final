@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
+from reviews.models import Review
 
 from ._loader import data_loader
-from reviews.models import Review
 
 
 class Command(BaseCommand):

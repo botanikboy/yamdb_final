@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
+from reviews.models import Category
 
 from ._loader import data_loader
-from reviews.models import Category
 
 
 class Command(BaseCommand):

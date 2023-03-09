@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
+from reviews.models import Genre
 
 from ._loader import data_loader
-from reviews.models import Genre
 
 
 class Command(BaseCommand):

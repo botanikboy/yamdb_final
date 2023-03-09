@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
+from users.models import User
 
 from ._loader import data_loader
-from users.models import User
 
 
 class Command(BaseCommand):
