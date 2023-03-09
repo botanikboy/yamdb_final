@@ -1,5 +1,5 @@
 # YaMDb
-![workflow badge](https://github.com/botanikboy/yamdb_final/actions/workflows/yambd_workflow.yml/badge.svg)
+![workflow badge](https://github.com/botanikboy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 YaMDb собирает отзывы пользователей на произведения.
 
