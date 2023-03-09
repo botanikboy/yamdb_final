@@ -1,8 +1,8 @@
-from django_filters.rest_framework import DjangoFilterBackend
-from django.contrib.auth.tokens import default_token_generator
 from django.conf import settings
+from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, permissions, status
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
@@ -11,18 +11,17 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 from rest_framework_simplejwt.views import TokenObtainPairView
-
-from reviews.models import Category, Genre, Title, Review
+from reviews.models import Category, Genre, Review, Title
 from users.models import User
-from .serializers import (
-    AuthSerializer, TokenSerializer, UserSerializer,
-    ReviewSerializer, CommentSerializer, TitleSerializer, GenreSerializer,
-    CategorySerializer, ListDetailedTitleSerializer,
-)
-from .permissions import (UsersPermission, CommentReviewsPermissions,
-                          AdminOrReadOnly)
+
 from .core import CategoryGenreViewSet
 from .filters import TitleFilter
+from .permissions import (AdminOrReadOnly, CommentReviewsPermissions,
+                          UsersPermission)
+from .serializers import (AuthSerializer, CategorySerializer,
+                          CommentSerializer, GenreSerializer,
+                          ListDetailedTitleSerializer, ReviewSerializer,
+                          TitleSerializer, TokenSerializer, UserSerializer)
 
 
 class SignUpView(APIView):

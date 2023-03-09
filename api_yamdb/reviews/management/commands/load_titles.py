@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
+from reviews.models import Genre, Title
 
-from ._loader import data_loader, add_genres
-from reviews.models import Title, Genre
+from ._loader import add_genres, data_loader
 
 
 class Command(BaseCommand):

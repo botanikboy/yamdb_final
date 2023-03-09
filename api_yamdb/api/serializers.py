@@ -1,9 +1,8 @@
-from rest_framework import serializers
-from django.db.models import Avg
-from django.db import IntegrityError
 from django.contrib.auth.validators import UnicodeUsernameValidator
-
-from reviews.models import Title, Genre, Category, Review, Comment
+from django.db import IntegrityError
+from django.db.models import Avg
+from rest_framework import serializers
+from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 from users.validators import validate_username
 
