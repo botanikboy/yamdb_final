@@ -112,8 +112,7 @@ class ListDetailedTitleSerializer(serializers.ModelSerializer):
             Avg('score'))['score__avg']
         if rating:
             return int(rating)
-        else:
-            return None
+        return None
 
     class Meta:
         model = Title
