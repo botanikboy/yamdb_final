@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ../ .
 
-RUN cd ./api_yamdb/
+WORKDIR ./api_yamdb/
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
