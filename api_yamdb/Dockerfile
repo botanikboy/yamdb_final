@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ../ .
 
-WORKDIR /api_yamdb
+WORKDIR ./api_yamdb
 
 RUN dir -s
 
