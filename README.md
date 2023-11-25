@@ -5,7 +5,7 @@ YaMDb собирает отзывы пользователей на произв
 
 ## Установка
 
-### Шаблон наполенеия env-файла
+### Шаблон наполенеия env-файла [env.example](infra/.env.example)
 
 ```python
 DB_ENGINE=django.db.backends.postgresql # тип используемой базы данных(в примере postgresql)
@@ -49,3 +49,13 @@ docker-compose exec web python manage.py collectstatic --no-input
 http://localhost/
 Описание API:
 http://localhost/redoc/
+
+## Основные технологии
+- [Python](https://www.python.org/)
+- [Docker](https://www.docker.com/)
+- [Django](https://www.djangoproject.com/)
+- [Django REST framework](https://www.django-rest-framework.org/)
+
+## Об авторе
+Разработано:
+[Илья Савинкин](https://www.linkedin.com/in/ilya-savinkin-6002a711/)
